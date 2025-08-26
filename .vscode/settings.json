@@ -1,0 +1,4 @@
+{
+  "python.defaultInterpreterPath": "spendingbot/backend/.venv/bin/python",
+  "editor.formatOnSave": true
+}

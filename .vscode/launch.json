@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FastAPI (Uvicorn) — backend",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["app.main:app", "--reload", "--port", "8000"],
+      "cwd": "${workspaceFolder}/spendingbot/backend",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/spendingbot/backend"
+      },
+      "jinja": true,
+      "console": "integratedTerminal"
+    }
+  ]
+}
