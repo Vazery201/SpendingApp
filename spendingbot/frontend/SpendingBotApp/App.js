@@ -48,7 +48,7 @@ export default function App() {
     const exchangeAndFetch = useCallback(async (publicToken) => {
         try {
             setBusy(true);
-            setStatus('Exchanging public_token…');
+            setStatus('Exchanging public token…');
 
             // Our backend expects JSON body for exchange
             const ex = await fetch(`${BASE_URL}/plaid/exchange_public_token`, {
