@@ -1,16 +1,9 @@
-# Dependencies
 node_modules/
-
-# Builds
 dist/
 build/
 .next/
 .out/
-
-# Env/config
 .env
 .env.*
-
-# Editors/OS
 .vscode/
 .DS_Store
