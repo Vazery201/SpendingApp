@@ -3,11 +3,14 @@
  */
 
 import React from 'react';
-import ReactTestRenderer from 'react-test-renderer';
+import { render } from '@testing-library/react-native';
 import App from '../App';
 
-test('renders correctly', async () => {
-  await ReactTestRenderer.act(() => {
-    ReactTestRenderer.create(<App />);
-  });
+jest.mock('react-native-plaid-link-sdk', () => ({
+  PlaidLink: () => null,
+}));
+
+test('renders SpendingBot header', () => {
+  const { getByText } = render(<App />);
+  expect(getByText('SpendingBot')).toBeTruthy();
 });

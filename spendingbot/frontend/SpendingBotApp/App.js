@@ -3,7 +3,6 @@ import React, { useEffect, useState, useCallback } from 'react';
 import { SafeAreaView, View, Text, Button, FlatList, ActivityIndicator, StyleSheet, Alert } from 'react-native';
 import { PlaidLink } from 'react-native-plaid-link-sdk';
 import { NativeModules, Platform } from 'react-native';
-import { NativeModules } from 'react-native';
 console.log('PlaidLink typeof:', typeof PlaidLink);
 console.log('RNLinksdk present?', !!NativeModules.RNLinksdk);
 
